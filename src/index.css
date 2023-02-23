@@ -245,13 +245,14 @@ ul.navigation > li a {
   padding: 10px 0 10px 0;
   float: left;
 }
-/* main */
+
 .main{
 width: calc(100% - 260px);
 margin-left: 260px;
 }
 
 /* About Me */
+/* for all titles  */
 h2.title {
   text-align: center;
   margin-bottom: 50px;
@@ -301,4 +302,53 @@ section.banner::after {
   color: #fff;
   text-align: center;
   padding: 0 15px;
+}
+
+
+
+
+
+
+/*  Resume and Skills*/
+
+
+
+.skill_bars > .bars {
+  position: relative;
+  width: 100%;
+  margin: 50px 0;
+  background: rgb(243, 245, 250);
+  height: 12px;
+} 
+.skill_bars > .bars > p {
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  bottom:15px;
+}
+.skill_bars > .bars > span {
+  font-size: 14px;
+  position: absolute;
+  right: 0px;
+  bottom:15px;
+}
+.skill_bars > .bars::before{
+  position: absolute;
+  content: "";
+  top:0;
+  left:0;
+  bottom: 0;
+  background: #4668a2;
+}
+.skill_bars > .bars.one::before{
+  width: 100%;
+}
+.skill_bars > .bars.two::before{
+  width: 90%;
+}
+.skill_bars > .bars.three::before{
+  width: 75%;
+}
+.skill_bars > .bars.four::before{
+  width: 55%;
 }
