@@ -5,25 +5,10 @@ const Header = () => {
   const [cross, handleCross] = useState(false)
   return (
     <header id="myHeader">
-        <div className="container">
                 <div className="logo_part">
-                      <a href="/"><h1>Rohit Kumar</h1></a>
+                 <span className='pfp'><img  src="https://avatars.githubusercontent.com/u/58967842?v=4" alt="Rohit's Image" /></span> 
+                  <a href="/"><h1>Rohit Kumar</h1></a>
                 </div>
-             
-                <ul className="socials">
-                  <a href="">
-                    <i className="fa-brands fa-instagram"></i> 
-                  </a>
-                  <a href="">
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                  <a href="">
-                    <i className="fa-brands fa-linkedin"></i>
-                  </a>
-                  <a href="">
-                    <i className="fa-brands fa-snapchat"></i>
-                  </a>
-                </ul>
                
                 <nav>    
                         <div className={cross ? "toggle_btn cross": "toggle_btn"} onClick={()=>handleCross(!cross)} ><div className="lines"></div><div className="lines"></div><div className="lines"></div></div>
@@ -38,7 +23,23 @@ const Header = () => {
                             <li><a href="contact">Contact</a></li>
                         </ul>
                 </nav>
-        </div>
+                
+              
+                <ul className="socials">
+                  <a href="">
+                    <i className="fa-brands fa-instagram"></i> 
+                  </a>
+                  <a href="">
+                    <i className="fa-brands fa-github"></i>
+                  </a>
+                  <a href="">
+                    <i className="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="">
+                    <i className="fa-brands fa-snapchat"></i>
+                  </a>
+                </ul>
+            
     </header>
   )
 }

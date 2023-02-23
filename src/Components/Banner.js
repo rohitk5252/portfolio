@@ -7,7 +7,7 @@ const Banner = () => {
                         <h2>Welcome <span>I'm a Software Dveloper</span>
 </h2>
                         <p>based in Punjab, India</p>
-                        <a>Hire Me</a>
+                        <button className='Btn Btn--rounded Btn--outline mrtop25'>Hire Me</button>
                     </div>
                
     </section>

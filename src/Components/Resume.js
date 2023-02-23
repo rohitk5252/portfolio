@@ -7,7 +7,6 @@ const Resume = ({title}) => {
       <h2 className="title" dataText={title}>
                 {title}
             </h2>
-      </div>
       <div className="row">
         <div className="col-6">
           <div className="row">
@@ -54,7 +53,7 @@ const Resume = ({title}) => {
               </div>
             </div>
         </div>
-
+</div>
         <div className="row">
           <div className="col-6 skills">
             <h3> h333  </h3>
@@ -93,6 +92,7 @@ const Resume = ({title}) => {
         </div> 
         <button className='Btn download_btn'>Download CV</button>
       </div>
+     
     </section>
   )
 }

@@ -19,8 +19,8 @@ const Contact = ({title}) => {
             <div className="socials"><i class="fa-brands fa-github"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-google"></i></div>
             </div>
             <div className="col-8">
-                <h2>SEND US A NOTE</h2>
-                <form className='form_group'>
+                <h2>SEND US A NOTE</h2> 
+                <form className='contact_form'>
                     <input type="text" placeholder='Name' />
                     <input type="email" placeholder='Email' />
                     <textarea name="" id="" cols="30" rows="10" placeholder='Tell us more about your needs'></textarea>

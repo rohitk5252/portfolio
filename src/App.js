@@ -1,6 +1,7 @@
 import About from "./Components/About";
 import Banner from "./Components/Banner";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Resume from "./Components/Resume";
 import Services from "./Components/Services";
@@ -13,12 +14,13 @@ function App() {
         <Header />
         <div className="main">
           <Banner />
-          <About title={"About Me"}/>
+          <About title={"Know Me More"} tafter={"About Me"}/>
           <Services title={"What I Do"} />
           <Resume title={"Resume"} />
           <Testimonial title={"Client Speak"}/>
           <Contact title={"Get in Touch"}/>
         </div>
+        <Footer />
       </>
   );
 }

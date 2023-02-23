@@ -7,7 +7,6 @@ const Services = ({title}) => {
         <h2 className="title" dataText={title}>
                 {title}
             </h2>
-        </div>
         <div className="row">
             <div className="col-6">
                 <div className="serviceBox">
@@ -51,6 +50,7 @@ const Services = ({title}) => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eaque?</p>
                 </div>
             </div>
+        </div>
         </div>
     </section>
   )
