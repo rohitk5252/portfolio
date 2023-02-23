@@ -90,7 +90,8 @@ const Resume = ({title}) => {
             </div>
             </div>
           
-        </div>
+        </div> 
+        <button className='Btn download_btn'>Download CV</button>
       </div>
     </section>
   )
