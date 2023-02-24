@@ -19,7 +19,7 @@ function App() {
           <Banner />
           <About title={"Know Me More"} tafter={"About Me"}/>
           <Services title={"What I Do"} tafter={"Services"}/>
-          <Resume title={"Resume"} />
+          <Resume title={"Resume"} tafter={"Summery"}/>
           <Testimonial title={"Client Speak"}/>
           <Contact title={"Get in Touch"}/>
         </div>

@@ -9,6 +9,7 @@
   --color-white-dark: #c4c2c2;
   --color-gray-dark: rgb(72, 71, 71);
   --color-gray-normal: gray;
+  --color-gray-light: rgb(205, 198, 198);
 }
 
 *,
@@ -464,25 +465,63 @@ ul.list li:last-child {
 
 
 .services .serviceBox {
-  border: var(--border-test);
+  line-height: 1.7;
   display: flex;
   gap: 20px;
 }
-.services .serviceBox .img i {
-  font-size: 30px;
-  color: var(--color-primary);
-  padding: 10px;
-  margin: 10px;
+
+.services .serviceBox {
+  
 }
 
 .services .serviceBox .img {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 8px;
-
 }
-.services .serviceBox .content {
 
+.services .serviceBox .img i {
+  font-size: 30px;
+  color: var(--color-primary);
+  padding: 25px;
+}
+
+ .serviceBox .content > p {
+  /* margin-top: 10px; */
 }
 /* ======================================== */
+
+/* ------------------- Resume ---------------- */
+
+.resume .content {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid var(--color-gray-light);
+  border-radius: 5px;
+}
+.resume .year {
+  font-size: 14px;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: var(--color-primary);
+}
+
+.resume .content h3 {
+  margin-top: 20px;
+  font-weight: 600;
+}
+.resume .content p {
+  line-height: 1.5;
+  margin-top: 20px;
+ }
+
+.resume .content p:not(:last-child) {
+  color: rgb(205, 15, 15);
+}
 
 .skill_bars > .bars {
   position: relative;

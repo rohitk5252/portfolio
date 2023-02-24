@@ -1,59 +1,64 @@
 import React from 'react'
 
-const Resume = ({title}) => {
+const Resume = ({title, tafter}) => {
   return (
     <section className="resume">
       <div className="container">
-      <h2 className="title" dataText={title}>
+      <h2 className="title" dataText={tafter}>
                 {title}
             </h2>
-      <div className="row">
-        <div className="col-6">
+
           <div className="row">
-            <div className="col-12">
-              <p className='year'>2000-2004</p>
+            <div className="col-6  ">
+              <div className="content">
+              <span className='year'>2000-2004</span>
               <h3>Computer Science</h3>
               <p>GNDEC Ludhiana</p>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor sit ametLorem ipsum dolor Lorem ipsum dolor sit ametsit ametipsum dolor sit ametsit amet.</p>
+              </div>
             </div>
-            <div className="col-12">
-            <p className='year'>2000-2004</p>
+            <div className="col-6  ">
+            <div className="content">
+            <span className='year'>2000-2004</span>
               <h3>Computer Science</h3>
               <p>GNDEC Ludhiana</p>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit ipsum dolor sit ametsit ametametametamet.</p>
+              </div>
             </div>
-            <div className="col-12">
-            <p className='year'>2000-2004</p>
+            <div className="col-6  ">
+            <div className="content">
+            <span className='year'>2000-2004</span>
               <h3>Computer Science</h3>
               <p>GNDEC Ludhiana</p>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit aipsum dolor sit ametsit ametmetametamet.</p>
+              </div>
             </div>
-          </div>
+            <div className="col-6  ">
+            <div className="content">
+            <span className='year'>2000-2004</span>
+              <h3>Computer Science</h3>
+              <p>GNDEC Ludhiana</p>
+              <p>Lorem ipsum dolor sitLorem ipsum dolor sit Lorem ipsum dolor sit aipsum dolor sit ametsit ametmetamet amet.</p>
+              </div>
+            </div>
+              <div className="col-6  ">
+              <div className="content">
+              <span className='year'>2000-2004</span>
+              <h3>Computer Science</h3>
+              <p>GNDEC Ludhiana</p>
+              <p>Lorem ipsum dolor sitLorem ipsum dolor sit Lorem ipsum dolor sit amipsum dolor sit ametsit ametetamet amet.</p>
+              </div>
+              </div>
+              <div className="col-6  ">
+              <div className="content">
+                <span className='year'>2000-2004</span>
+              <h3 >Computer Science</h3>
+              <p>GNDEC Ludhiana</p>
+              <p>Lorem ipsum dolor sit Lorem ipsum dolor sit ametLorem ipsum dolor ipsum dolor sit ametsit ametsit ametamet.</p>
+              </div>
+              </div>
         </div>
 
-        <div className="col-6">
-          <div className="row">
-            <div className="col-12">
-            <p className='year'>2000-2004</p>
-              <h3>Computer Science</h3>
-              <p>GNDEC Ludhiana</p>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-              <div className="col-12">
-              <p className='year'>2000-2004</p>
-              <h3>Computer Science</h3>
-              <p>GNDEC Ludhiana</p>
-              <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div className="col-12">
-                <p className='year'>2000-2004</p>
-              <h3>Computer Science</h3>
-              <p>GNDEC Ludhiana</p>
-              <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-            </div>
-        </div>
-</div>
         <div className="row">
           <div className="col-6 skills">
             <h3> h333  </h3>
@@ -90,7 +95,7 @@ const Resume = ({title}) => {
             </div>
           
         </div> 
-        <button className='Btn download_btn'>Download CV</button>
+        <button className='Btn Btn--rounded download_btn'>Download CV <i class="fa-sharp fa-solid fa-download"></i></button>
       </div>
      
     </section>
