@@ -26,19 +26,20 @@ const About = ({title, tafter}) => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-3">
+                <div className="col-3 card">
                     <h3>10+</h3>
-                    <span>Years OF Experience</span>
+                    <span>Years Experience</span>
                 </div>
-                <div className="col-3">
+
+                <div className="col-3 card">
                     <h3>250+</h3>
                     <span>Happy Clients</span>
                 </div>
-                <div className="col-3">
+                <div className="col-3 card">
                     <h3>650+</h3>
                     <span>Projects</span>
                 </div>
-                <div className="col-3">
+                <div className="col-3 card">
                     <h3>38</h3>
                     <span>Awards</span>
                 </div>

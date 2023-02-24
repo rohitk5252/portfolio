@@ -4,6 +4,11 @@
 :root {
   --border-test: 2px solid rgb(121, 200, 121);
   --color-primary: #20c997;
+  --color-primary-light: rgba(32, 201, 151, 0.8);
+  --color-white-light: #fff;
+  --color-white-dark: #c4c2c2;
+  --color-gray-dark: rgb(72, 71, 71);
+  --color-gray-normal: gray;
 }
 
 *,
@@ -68,7 +73,6 @@ body {
 
 section {
   padding: 100px 0;
-  min-height: 100vh;
 }
 /* ------------------------ */
 .text_center {
@@ -128,7 +132,7 @@ img {
   font-size: 16px;
   outline: none;
   display: inline-block;
-  padding: 16px 32px;
+  padding: 16px 40px;
   border-width: 2px;
   font-weight: 500;
   border-style: solid;
@@ -136,7 +140,7 @@ img {
 }
 .Btn--primary {
   border-color: var(--color-primary);
-  background-color: var(--color-primary);;
+  background-color: var(--color-primary);
   color:white;
 }
 .Btn--outline {
@@ -156,9 +160,16 @@ img {
   margin-top: 25px;
 }
 
+.pdtop25 {
+  padding-top: 25px;
+}
+.pdbtm15 {
+  padding-bottom: 15px;
+}
+
 /*  Header */
 header {
-  display: flex;
+    display: flex;
     position: fixed;
     width: 260px;
     top: 0;
@@ -285,9 +296,68 @@ ul.navigation > li a {
   margin-left: 260px;
 }
 
-/* About Me */
+/* ----------------------Theme Box --------------------------- */
+
+
+.themebar {
+  z-index: 9999;
+  background: var(--color-primary-light);
+  position: fixed;
+  top: 40%;
+  right: 0;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  transform: translateX(200px);
+  transition: 0.3s;
+  transition-timing-function: linear;
+}
+
+.themebar.theme_show {
+  transform: translateX(0px);
+  transition: 0.3s;
+  transition-timing-function: linear;
+}
+
+.themebar .setting {
+  background: var(--color-primary-light);
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  left: -32px;
+  top: 0px;
+}
+
+.themebar .setting i{
+  background: transparent;
+  font-size: 20px;
+  color: #2b2b2b;
+}
+
+.setting_options > li {
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 6px;
+  background: var(--color-primary-light);
+  transition: 0.3s;
+}
+
+.themebar .setting_options > li:hover, .setting i:hover {
+  scale: 1.05;
+  transition: 0.3s;
+  background: rgb(39, 173, 133);
+  color: #fff;
+}
+
+.themebar input {
+  margin: 4px;
+}
+
+/*--------------------- About Me -------------------------------- */
 /* for all titles  */
 h2.title {
+  color: black;
+  z-index: 9999;
   font-weight: 600;
   text-align: center;
   margin-bottom: 50px;
@@ -310,6 +380,7 @@ h2.title::after {
   transform: translateY(-50%);
 }
 section.banner {
+  min-height: 100vh;
   position: relative;
   background: #474747;
   background-image: url(https://picsum.photos/200/300
@@ -342,7 +413,7 @@ section.banner::after {
   right: 0;
 }
 
-.content {
+.banner .content {
   z-index: 1;
   color: #fff;
   text-align: center;
@@ -364,13 +435,54 @@ ul.list li:last-child {
   border-bottom: none;
 }
 
-
+/* ---------------About-------------------- */
 
 .about h5 {
   font-size: 30px;
   font-weight: 600;
 }
+.about h3 {
+  font-size: 50px;
+  font-weight: 500;
+  opacity: 0.8;
+}
 
+.about .card {
+  position: relative;
+  text-align: center;
+  margin-top: 48px;
+  padding:40px 40px;
+  border-left: 1px solid #eae7e7;
+} 
+.about .card:first-child {
+  border: none;
+}
+
+/* ===================================== */
+
+/* --------------Services --------------- */
+
+
+.services .serviceBox {
+  border: var(--border-test);
+  display: flex;
+  gap: 20px;
+}
+.services .serviceBox .img i {
+  font-size: 30px;
+  color: var(--color-primary);
+  padding: 10px;
+  margin: 10px;
+}
+
+.services .serviceBox .img {
+  border-radius: 8px;
+
+}
+.services .serviceBox .content {
+
+}
+/* ======================================== */
 
 .skill_bars > .bars {
   position: relative;
