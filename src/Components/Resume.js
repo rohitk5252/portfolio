@@ -9,48 +9,48 @@ const Resume = ({title, tafter}) => {
             </h2>
 
           <div className="row">
-            <div className="col-6  ">
-              <div className="content">
+            <div className="col-6">
+              <div className="content mrtop25">
               <span className='year'>2000-2004</span>
               <h3>Computer Science</h3>
               <p>GNDEC Ludhiana</p>
-              <p>Lorem ipsum dolor sit ametLorem ipsum dolor Lorem ipsum dolor sit ametsit ametipsum dolor sit ametsit amet.</p>
+              <p>Lorem ipsum dolor sit ametLorem ipsum dolor Lorem ipsum dolor sit ametsit dolor sit ametsit amet.</p>
               </div>
             </div>
-            <div className="col-6  ">
-            <div className="content">
+            <div className="col-6">
+            <div className="content mrtop25">
             <span className='year'>2000-2004</span>
               <h3>Computer Science</h3>
               <p>GNDEC Ludhiana</p>
               <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit ipsum dolor sit ametsit ametametametamet.</p>
               </div>
             </div>
-            <div className="col-6  ">
-            <div className="content">
+            <div className="col-6">
+            <div className="content mrtop25">
             <span className='year'>2000-2004</span>
               <h3>Computer Science</h3>
               <p>GNDEC Ludhiana</p>
               <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit aipsum dolor sit ametsit ametmetametamet.</p>
               </div>
             </div>
-            <div className="col-6  ">
-            <div className="content">
+            <div className="col-6">
+            <div className="content mrtop25">
             <span className='year'>2000-2004</span>
               <h3>Computer Science</h3>
               <p>GNDEC Ludhiana</p>
               <p>Lorem ipsum dolor sitLorem ipsum dolor sit Lorem ipsum dolor sit aipsum dolor sit ametsit ametmetamet amet.</p>
               </div>
             </div>
-              <div className="col-6  ">
-              <div className="content">
+              <div className="col-6">
+              <div className="content mrtop25">
               <span className='year'>2000-2004</span>
               <h3>Computer Science</h3>
               <p>GNDEC Ludhiana</p>
               <p>Lorem ipsum dolor sitLorem ipsum dolor sit Lorem ipsum dolor sit amipsum dolor sit ametsit ametetamet amet.</p>
               </div>
               </div>
-              <div className="col-6  ">
-              <div className="content">
+              <div className="col-6">
+              <div className="content mrtop25">
                 <span className='year'>2000-2004</span>
               <h3 >Computer Science</h3>
               <p>GNDEC Ludhiana</p>
@@ -61,7 +61,7 @@ const Resume = ({title, tafter}) => {
 
         <div className="row">
           <div className="col-6 skills">
-            <h3> h333  </h3>
+            <h3 className='mrtop25'> My Skills  </h3>
             <div class="skill_bars" >
               <div class="bars one">
                 <p>HTML</p> <span>100%</span>
@@ -78,7 +78,7 @@ const Resume = ({title, tafter}) => {
             </div>
           
           <div className="col-6 skills">
-          <h3>My Skills</h3>
+          <h3 className='mrtop25 hide'>My Skills</h3>
             <div class="skill_bars" >
               <div class="bars one">
                 <p>HTML</p> <span>100%</span>

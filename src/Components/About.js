@@ -12,10 +12,10 @@ const About = ({title, tafter}) => {
                         <h5>
                              I'm <span className='color-primary'>Simone Olivia</span> , a Web Developer
                         </h5>
-                        <p className='mrtop25'>Ex placeat harum porro suscipit quas explicabo quam a nemo impedit quia neque expedita sint, animi illo deleniti ullam dolorem necessitatibus sequi voluptatibus inventore! Repellat illo, sit quaerat assumenda recusandae expedita exercitationem autem cumque id eveniet rerum laborum? Alias sint voluptates consequuntur maiores quidem blanditiis architecto deserunt est, neque culpa eius placeat, officia ipsum velit dicta quae facilis perspiciatis omnis exercitationem consequatur iure voluptatibus ipsa quo quisquam. Sit, itaque, cupiditate maxime commodi aliquid hic beatae ipsam nisi consequatur mollitia asperiores ipsum nihil magnam amet obcaecati modi animi perferendis?</p>
+                        <p className='mrtop25'>Ex placeat harum porro suscipit quas explicabo quam a nemo impedit quia neque expedita sint, animi illo deleniti ullam dolorem necessitatibus sequi voluptatibus inventore! Repellat illo, sit quaerat assumenda recusandae expedita exercitationem autem cumque id eveniet rerum laborum? Alias <br /> sint voluptates consequuntur maiores quidem blanditiis architecto deserunt est, neque culpa eius placeat, officia ipsum velit dicta quae facilis perspiciatis omnis exercitationem consequatur iure voluptatibus ipsa quo quisquam. Sit, itaque, cupiditate maxime commodi aliquid hic beatae ipsam nisi consequatur mollitia asperiores ipsum nihil magnam amet obcaecati modi animi perferendis?</p>
                 </div>
 
-                <div className="col-4">
+                <div className="col-4 me">
                         <ul className="list">
                             <li><label >Name: </label><span>Lorem, ipsum.</span></li>
                             <li><label >Email: </label><span>Lorem, ipsum.</span></li>
