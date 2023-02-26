@@ -2,7 +2,7 @@ import React from 'react'
 
 const Resume = ({title, tafter}) => {
   return (
-    <section className="resume">
+    <section className="resume" id='resume'>
       <div className="container">
       <h2 className="title" dataText={tafter}>
                 {title}

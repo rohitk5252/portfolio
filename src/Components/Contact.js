@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = ({title, tafter}) => {
   return (
-    <section className="contact grayBg">
+    <section id="contact" className="contact grayBg" style={{}}>
         <div className="container">
         <h2 className="title" dataText={title}>
                 {tafter}

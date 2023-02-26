@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testimonial = ({title, tafter}) => {
   return (
-    <section className="testimonial">
+    <section className="testimonial" id='testimonials'>
         <div className="container">
         <h2 className="title" dataText={tafter}>
                 {title}

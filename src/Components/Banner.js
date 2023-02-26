@@ -8,6 +8,7 @@ const Banner = () => {
 </h2>
                         <p>based in Punjab, India</p>
                         <button className='Btn Btn--rounded Btn--outline mrtop25'>Hire Me</button>
+                        <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
                     </div>
                
     </section>

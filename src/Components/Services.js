@@ -2,7 +2,7 @@ import React from 'react'
 
 const Services = ({title, tafter}) => {
   return (
-    <section className="services grayBg">
+    <section className="services grayBg" id='services'>
         <div className="container">
         <h2 className="title" dataText={tafter}>
                 {title}

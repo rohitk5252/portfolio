@@ -1,14 +1,24 @@
 import React, { useState } from 'react'
-
 const Theme = () => {
-
+    const [count, cc] = useState(1.1);
     const [showTheme, setShowTheme] = useState(false)
+    const body = document.querySelector("body")
 
     const handleRtl= () => {
-        const body = document.querySelector("body")
         body.classList.toggle("rtl") ;
     }
-
+    const handleDark= () => {
+        body.classList.toggle("dark") ;
+    }
+    const handleApp = () => {
+        body.style.fontSize = `${count}em`
+        cc(count+0.1)
+    }
+    const handleAmm = () => {
+        body.style.fontSize = `${count}em`
+        cc(count-0.1)
+    }
+    
   return (
     <div className= {showTheme ? "themebar Btn--shadow theme_show" : "themebar Btn--shadow"}>
         <span  title="Change Theme" className="setting" onClick={() => setShowTheme(!showTheme)}>
@@ -16,18 +26,13 @@ const Theme = () => {
         </span>
         <ul className="setting_options">
             <li onClick={()=>handleRtl()}>RTL</li>
-            <li>Dark Mode</li>
+            <li onClick={()=>handleDark()}>Dark Mode</li>
             <li>Seamless</li>
-            <li>A+</li>
-            <li>A-</li>
+            <li onClick={()=> handleApp()}>A+</li>
+            <li onClick={() => handleAmm()}>A-</li>
             <li className="colors_options">
                 <span>Theme</span>
                 <ul>
-                    {/* <li className="c1"></li>
-                    <li className="c2"></li>
-                    <li className="c3"></li>
-                    <li className="c4"></li>
-                    <li className="c5"></li> */}
                     <input type="radio" name='radio'/>
                     <input type="radio" name='radio'/>
                     <input type="radio" name='radio'/>
