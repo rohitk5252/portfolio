@@ -18,7 +18,28 @@ const Theme = () => {
         body.style.fontSize = `${count}em`
         cc(count-0.1)
     }
-    
+
+    const handleRed = () => {
+        body.style.color = "#E96479"
+    }
+    const handleJamni = () => {
+        body.style.color = "#393053"
+        body.style.backgroundColor = "#EEEEEE"
+    }
+    const handleBlue = () => {
+        body.style.color = "#3E54AC"
+        body.style.backgroundColor = "#E9F8F9"
+    }
+    const handlePurp = () => {
+        body.style.color = "#AD7BE9"
+        body.style.backgroundColor = "#ECF2FF"
+
+    }
+    const reset = () => {
+        body.style.color = ""
+        body.style.backgroundColor = "#ddd"
+        body.style.fontSize = ""
+    }
   return (
     <div className= {showTheme ? "themebar Btn--shadow theme_show" : "themebar Btn--shadow"}>
         <span  title="Change Theme" className="setting" onClick={() => setShowTheme(!showTheme)}>
@@ -33,14 +54,25 @@ const Theme = () => {
             <li className="colors_options">
                 <span>Theme</span>
                 <ul>
-                    <input type="radio" name='radio'/>
-                    <input type="radio" name='radio'/>
-                    <input type="radio" name='radio'/>
-                    <input type="radio" name='radio'/>
-                    <input type="radio" name='radio'/>
+                    <input onClick={() => handleRed()} type="radio" name='radio' id='redColor'/>
+                    <label htmlFor="redColor"></label>
+
+                    <input onClick={() => handleBlue()} type="radio" name='radio' id='blueColor'/>
+                    <label htmlFor="blueColor"></label>
+
+                    <label htmlFor="redColor"></label>
+                    <input onClick={() => handleJamni()} type="radio" name='radio' id='jamniColor'/>
+                    <label htmlFor="jamniColor"></label>
+
+                    <input onClick={() => handleBlue()} type="radio" name='radio' id='blueColor'/>
+                    <label htmlFor="blueColor"></label>
+
+                    <input onClick={() => handlePurp()} type="radio" name='radio' id='purpColor'/>
+                    <label htmlFor="purpColor"></label>
+                    
                 </ul>
             </li>
-            <li>Reset</li>
+            <li onClick={() => reset()}>Reset</li>
         </ul>
     </div>
   )
